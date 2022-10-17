@@ -151,6 +151,7 @@ a {
   align-items: center;
   position: relative;
   min-height: 60vh;
+  padding: 20vh;
 }
 
 .principal .scroll {
@@ -356,6 +357,7 @@ a {
 .sobre-mim {
   display: flex;
   justify-content: space-around;
+  padding: 30vh;
 }
 
 .sobre-mim__descricao {
@@ -399,7 +401,6 @@ a {
   padding: auto;
   min-width: 300px;
   max-width: 300px;
-  margin-left: ;
 }
 
 .mouse-foto::before {
@@ -570,15 +571,15 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background-color: #00d2df;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #00bbc5;
+  background-color: #00ff3c;
 }
 
 ::selection {
-  background-color: rgb(24, 180, 24);
+  background-color: rgb(19, 67, 225);
 }
 
 @media (max-width: 1325px) {
@@ -777,9 +778,6 @@ a {
   text-align: center;
   transform: translateY(0px);
   opacity: 1;
-}
-
-.imgaemmexe {
 }
 
 .swiper {

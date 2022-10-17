@@ -3,14 +3,19 @@ export default function initAnimationScroll() {
 
   function animaScroll() {
     sections.forEach((section) => {
-      const halfSection = window.innerHeight * 0.6;
+      const halfSection = (window.innerHeight * 3) / 5;
       const sectionTop = section.getBoundingClientRect().top;
       const isSectionVisible = sectionTop - halfSection < 0;
       if (isSectionVisible) {
         section.classList.add("animation");
+      } else {
+        section.classList.remove("animation");
       }
     });
   }
 
-  window.addEventListener("scroll", animaScroll);
+  animaScroll();
+  if (sections.length) {
+    window.addEventListener("scroll", animaScroll);
+  }
 }

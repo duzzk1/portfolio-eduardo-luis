@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu portifólio online</title>
+    <link rel="stylesheet" href="css/menu-mobile.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="main.js"></script>
+    <style type="text/css">
+      .vue-notification-group {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+      }
+      .vue-notification-wrapper {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .notification-title {
+        font-weight: 600;
+      }
+      .vue-notification-template {
+        background: #fff;
+      }
+      .vue-notification,
+      .vue-notification-template {
+        display: block;
+        box-sizing: border-box;
+        text-align: left;
+      }
+      .vue-notification {
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 5px 5px;
+        color: #fff;
+        background: #44a4fc;
+        border-left: 5px solid #187fe7;
+      }
+      .vue-notification.warn {
+        background: #ffb648;
+        border-left-color: #f48a06;
+      }
+      .vue-notification.error {
+        background: #e54d42;
+        border-left-color: #b82e24;
+      }
+      .vue-notification.success {
+        background: #68cd86;
+        border-left-color: #42a85f;
+      }
+      .vn-fade-enter-active,
+      .vn-fade-leave-active,
+      .vn-fade-move {
+        transition: all 0.5s;
+      }
+      .vn-fade-enter,
+      .vn-fade-leave-to {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-header">
+      <header class="header">
+        <nav data-menu="start-menu">
+          <p><a href="#home" class="logo">&lsaquo;/ES&raquo;</a></p>
+          <button data-menu="button" aria-controls="menu"></button>
+          <ul data-menu="list" id="menu">
+            <a href="#home"><li>Home</li></a>
+            <a href="#sobre"><li>Sobre</li></a>
+            <a href="#experiencia"><li>Experiência</li></a>
+            <a href="#projetos"><li>Projetos</li></a>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="principal" id="home">
+        <div class="principal__right">
+          <img class="imgaemmexe" src="assets/euzada.svg" alt="" />
+        </div>
+        <div class="container-inicial">
+          <h1>Olá, sou</h1>
+          <span class="principal__sentence"></span>
+          <span class="principal__input-cursor"></span>
+          <h1>Desenvolvedor Front-End.</h1>
+          <a href="https://www.linkedin.com/in/edulsantos/">
+            <div class="principal__botao-linkedin">
+              <img src="assets/linkedin.png" alt="" />
+              <p>linkedIn</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="scroll" data-menu="start-menu">
+          <a href="#sobre"
+            >Scroll Down
+            <img
+              src="assets/setinha.png"
+              alt="seta indicando para a dar o scroll para baixo"
+          /></a>
+        </div>
+      </section>
+
+      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.2"
+          class="sobre-mim__foto"
+        >
+          <div class="mouse-foto"><p>PASSE O MOUSE SOBRE A FOTO</p></div>
+          <img src="./assets/eu.png" alt="Foto do Eduardo Santos" />
+        </div>
+        <div class="sobre-mim__descricao">
+          <h1>Sobre mim</h1>
+          <h2>Chapecó, Santa Catarina</h2>
+          <p data-tilt data-tilt-scale="1.1">
+            Sou o Eduardo, apaixonado pela tecnologia, desde maquinas ate
+            softwares! Tenho 22 anos, experiente em Analise de Sistemas e
+            estudando Programação Web por paixão, sou formado pelo IFSC em TI,
+            também estou cursando ADS (2/4 Semestre) e estudando HTML5, CSS E
+            JavaScript com o intuito de me tornar Dev, porem todos devemos dar o
+            pontapé inicial então estou focando na Programação Web!
+          </p>
+          <div class="sobre-mim_descricao-buttons">
+            <a href="assets/cv-eduardosantos.pdf">
+              <div class="sobre-mim__descricao-buttons-curriculo">
+                <img src="assets/cv-icon.png" alt="" />
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a
+              href="mailto: eduluis.cco@gmail.com?subject=Edu, vim pelo seu portifólio online, podemos conversar?"
+              target="_blank"
+            >
+              <div class="sobre-mim__descricao-buttons-email">
+                <img src="assets/email.png" alt="" />
+                <p>E-mail</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+        <a href=""></a>
+      </section>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <a href="https://github.com/duzzk1">
+          <div class="principal__botao-github">
+            <img src="assets/github.png" alt="" />
+            <p>Github</p>
+          </div>
+        </a>
+        <div class="cards">
+          <div class="container">
+            <div class="card">
+              <div class="content">
+                <h2>01</h2>
+                <h1>Em breve</h1>
+                <p>Projeto em andamento!</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <h2>02</h2>
+                <h1>Em breve</h1>
+                <p>Projeto em andamento!</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <h2>03</h2>
+                <h1>Em breve</h1>
+                <p>Projeto em andamento!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"));
+      VanillaTilt.init(document.querySelectorAll(".imgaemmexe"));
+    </script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      new Glide(".glide").mount();
+    </script>
+  </body>
+</html>
